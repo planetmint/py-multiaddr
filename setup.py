@@ -54,8 +54,8 @@ setup(
         'varint',
         'base58',
         'netaddr',
-        'py-cid',
-        'py-multicodec >= 0.2.0',
+        'py-cid@git+https://github.com/planetmint/py-cid.git#egg=py-cid',
+        'py-multicodec',
     ],
     test_suite='tests',
     tests_require=[
