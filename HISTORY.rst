@@ -1,6 +1,12 @@
 History
 =======
 
+0.0.10 (2022-9-9)
+----------------
+
+* forked and applied dependency cleanup to support more recent projects
+
+
 0.0.7 (2019-5-8)
 ----------------
 
