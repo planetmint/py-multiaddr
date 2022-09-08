@@ -2,7 +2,7 @@ History
 =======
 
 0.0.10 (2022-9-9)
-----------------
+-----------------
 
 * forked and applied dependency cleanup to support more recent projects
 
@@ -35,6 +35,6 @@ History
 .. _`#9`: https://github.com/multiformats/py-multiaddr/pull/9
 
 0.0.1 (2016-1-22)
-------------------
+-----------------
 
 * First release on PyPI.
