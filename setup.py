@@ -16,17 +16,17 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 
-version = '0.0.9'
+version = '0.0.10'
 
 setup(
-    name='multiaddr',
+    name='planetmint-multiaddr',
     version=version,
     description="Python implementation of jbenet's multiaddr",
     long_description=readme + '\n\n' + history,
     long_description_content_type="text/x-rst",
     author="Steven Buss",
     author_email='steven.buss@gmail.com',
-    url='https://github.com/multiformats/py-multiaddr',
+    url='https://github.com/planetmint/py-multiaddr',
     download_url=(
         'https://github.com/multiformats/py-multiaddr/tarball/%s' % version),
     packages=setuptools.find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
@@ -54,7 +54,7 @@ setup(
         'varint',
         'base58',
         'netaddr',
-        'py-cid@git+https://github.com/planetmint/py-cid.git#egg=py-cid',
+        'planetmint-py-cid',
         'py-multicodec',
     ],
     test_suite='tests',
