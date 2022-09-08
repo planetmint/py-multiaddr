@@ -19,7 +19,7 @@ class MultiAddrKeys(collections.abc.KeysView, collections.abc.Sequence):
 
     def __getitem__(self, idx):
         if idx < 0:
-            idx = len(self)+idx
+            idx = len(self) + idx
         for idx2, proto in enumerate(self):
             if idx2 == idx:
                 return proto
@@ -40,7 +40,7 @@ class MultiAddrItems(collections.abc.ItemsView, collections.abc.Sequence):
 
     def __getitem__(self, idx):
         if idx < 0:
-            idx = len(self)+idx
+            idx = len(self) + idx
         for idx2, item in enumerate(self):
             if idx2 == idx:
                 return item
@@ -54,11 +54,11 @@ class MultiAddrItems(collections.abc.ItemsView, collections.abc.Sequence):
                     yield proto, codec.to_string(proto, part)
                 except Exception as exc:
                     raise exceptions.BinaryParseError(
-                            str(exc),
-                            self._mapping.to_bytes(),
-                            proto.name,
-                            exc,
-                        ) from exc
+                        str(exc),
+                        self._mapping.to_bytes(),
+                        proto.name,
+                        exc,
+                    ) from exc
             else:
                 # We were given something like '/utp', which doesn't have
                 # an address, so return None
@@ -70,7 +70,7 @@ class MultiAddrValues(collections.abc.ValuesView, collections.abc.Sequence):
 
     def __getitem__(self, idx):
         if idx < 0:
-            idx = len(self)+idx
+            idx = len(self) + idx
         for idx2, proto in enumerate(self):
             if idx2 == idx:
                 return proto
